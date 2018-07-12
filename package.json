@@ -1,0 +1,19 @@
+{
+  "name": "primo-explore-search-collections",
+  "version": "0.0.1",
+  "description": "Search collections from Collection Discovery",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BCLibraries/primo-explore-search-collections.git"
+  },
+  "keywords": [
+    "primo"
+  ],
+  "author": "Luke Gaudreau",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/BCLibraries/primo-explore-search-collections/issues"
+  },
+  "homepage": "https://github.com/BCLibraries/primo-explore-search-collections#readme"
+}

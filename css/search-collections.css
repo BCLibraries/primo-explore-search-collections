@@ -1,0 +1,16 @@
+prm-collection-gallery-header-after {
+    position: relative;
+    display: block;
+}
+
+prm-collection-gallery-header-after .md-button {
+    position: absolute;
+    bottom: 2em;
+    right: 25%;
+    background-color: #8a100b;
+    color: #fff;
+}
+prm-collection-gallery-header-after .md-button:hover:not([disabled]) {
+    background-color: rgba(138,16,11,0.8);
+    color: #fff;
+}
