@@ -1,1 +1,2 @@
-<a class="md-button md-primoExplore-theme md-ink-ripple" href="/primo-explore/search?tab=bcl_only&search_scope=collections&vid=bclib_new&offset=0">Search BC Digitized Collections</a>
+<a ng-if="$ctrl.isGalleryLobby" class="md-button md-primoExplore-theme md-ink-ripple" href="/primo-explore/search?tab=bcl_only&search_scope=collections&vid=bclib_new&offset=0">Search BC Digitized Collections</a>
+<a ng-if="!$ctrl.isGalleryLobby" class="md-button md-primoExplore-theme md-ink-ripple" href="/primo-explore/search?query=title,contains,{{$ctrl.currentCollection.name}},AND&tab=bcl_only&search_scope=collections&sortby=rank&vid=bclib_new&mode=advanced&offset=0" title="Search {{$ctrl.currentCollection.name}}">Search this collection</a>

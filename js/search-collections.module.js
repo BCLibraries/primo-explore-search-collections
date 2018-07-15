@@ -1,9 +1,9 @@
 angular
     .module('bc-search-collections', [])
-    .controller('prmCollectionGalleryHeaderAfter', [function () {
+    .controller('prmCollectionGalleryHeaderAfterController', [function () {
         var vm = this;
-        vm.term = vm.parentCtrl.term;
-        vm.scope = vm.parentCtrl.searchStateService.searchObject.scope;
+        vm.isGalleryLobby = vm.parentCtrl.isGalleryLobby;
+        vm.currentCollection = vm.parentCtrl.currentCollection;
     }])
     .component('prmCollectionGalleryHeaderAfter', {
         bindings: { parentCtrl: '<'},
