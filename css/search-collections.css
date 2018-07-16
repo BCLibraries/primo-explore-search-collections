@@ -16,3 +16,19 @@ prm-collection-gallery-header-after .md-button:hover:not([disabled]) {
     color: #fff;
     box-shadow: none;
 }
+
+/* Responsive styles */
+@media screen and (max-width: 1099px) {
+    prm-collection-gallery-header-after .md-button {
+        bottom: 1em;
+    }
+    prm-collection-gallery-header .collection-header-inner.has-transparent-topbar {
+        padding-top: 0;
+        padding-bottom: 4em;
+    }
+}
+@media screen and (max-width: 599px) {
+    prm-collection-gallery-header .collection-info {
+        font-size: 1rem;
+    }
+}
