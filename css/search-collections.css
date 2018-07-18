@@ -18,7 +18,7 @@ prm-collection-gallery-header-after .md-button:hover:not([disabled]) {
 }
 
 /* Responsive styles */
-@media screen and (max-width: 1099px) {
+@media screen and (max-width: 1365px) {
     prm-collection-gallery-header-after .md-button {
         bottom: 1em;
     }
