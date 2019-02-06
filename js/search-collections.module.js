@@ -3,7 +3,11 @@ angular
     .controller('prmCollectionGalleryHeaderAfterController', [function () {
         var vm = this;
         vm.isGalleryLobby = vm.parentCtrl.isGalleryLobby;
-        vm.currentCollection = vm.parentCtrl.currentCollection;
+        vm.getCollection = getCollection;
+
+		function getCollection() {
+			return vm.parentCtrl.currentCollection.name;
+		}
     }])
     .component('prmCollectionGalleryHeaderAfter', {
         bindings: { parentCtrl: '<'},
