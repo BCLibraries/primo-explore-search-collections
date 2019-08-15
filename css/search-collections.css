@@ -17,6 +17,11 @@ prm-collection-gallery-header-after .md-button:hover:not([disabled]) {
     box-shadow: none;
 }
 
+/* Disable built-in search functionality */
+prm-collection-gallery prm-collection-search {
+    display: none;
+}
+
 /* Responsive styles */
 @media screen and (max-width: 1365px) {
     prm-collection-gallery-header-after .md-button {
