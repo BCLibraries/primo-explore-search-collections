@@ -1,13 +1,15 @@
 angular
     .module('bc-search-collections', [])
     .controller('prmCollectionGalleryHeaderAfterController', [function () {
-        var vm = this;
-        vm.isGalleryLobby = vm.parentCtrl.isGalleryLobby;
-        vm.getCollection = getCollection;
+		this.$onInit = function () {
+			var vm = this;
+			vm.isGalleryLobby = vm.parentCtrl.isGalleryLobby;
+			vm.getCollection = getCollection;
 
-		function getCollection() {
-			return vm.parentCtrl.currentCollection.name;
-		}
+			function getCollection() {
+				return vm.parentCtrl.currentCollection.name;
+			}
+		};
     }])
     .component('prmCollectionGalleryHeaderAfter', {
         bindings: { parentCtrl: '<'},
