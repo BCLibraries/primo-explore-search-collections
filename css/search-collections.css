@@ -24,8 +24,9 @@ prm-collection-gallery-header-after .md-button:hover:not([disabled]) {
 
 /* Disable OTB search but leave sort options */
 div.collection-sort-cont ~ md-divider,
-div.collection-sort-cont ~ .search-within {
-  display: none;
+div.collection-sort-cont ~ .search-within,
+prm-collection-search .search-within {
+  display: none !important;
 }
 
 /* Responsive styles */
